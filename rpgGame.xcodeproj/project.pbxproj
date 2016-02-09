@@ -14,6 +14,9 @@
 		8C10E93C1C5D78A900C837D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C10E93A1C5D78A900C837D0 /* LaunchScreen.storyboard */; };
 		8C10E9471C5D78A900C837D0 /* rpgGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C10E9461C5D78A900C837D0 /* rpgGameTests.swift */; };
 		8C10E9521C5D78A900C837D0 /* rpgGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C10E9511C5D78A900C837D0 /* rpgGameUITests.swift */; };
+		8C10E9601C69405B00C837D0 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C10E95F1C69405B00C837D0 /* Player.swift */; };
+		8C10E9621C6944C200C837D0 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C10E9611C6944C200C837D0 /* Hero.swift */; };
+		8C10E9641C694C9200C837D0 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C10E9631C694C9200C837D0 /* Monster.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		8C10E94D1C5D78A900C837D0 /* rpgGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rpgGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C10E9511C5D78A900C837D0 /* rpgGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rpgGameUITests.swift; sourceTree = "<group>"; };
 		8C10E9531C5D78A900C837D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C10E95F1C69405B00C837D0 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Player.swift; path = ../Player.swift; sourceTree = "<group>"; };
+		8C10E9611C6944C200C837D0 /* Hero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		8C10E9631C694C9200C837D0 /* Monster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +103,15 @@
 		8C10E9301C5D78A900C837D0 /* rpgGame */ = {
 			isa = PBXGroup;
 			children = (
+				8C10E95F1C69405B00C837D0 /* Player.swift */,
 				8C10E9311C5D78A900C837D0 /* AppDelegate.swift */,
 				8C10E9331C5D78A900C837D0 /* ViewController.swift */,
 				8C10E9351C5D78A900C837D0 /* Main.storyboard */,
 				8C10E9381C5D78A900C837D0 /* Assets.xcassets */,
 				8C10E93A1C5D78A900C837D0 /* LaunchScreen.storyboard */,
 				8C10E93D1C5D78A900C837D0 /* Info.plist */,
+				8C10E9611C6944C200C837D0 /* Hero.swift */,
+				8C10E9631C694C9200C837D0 /* Monster.swift */,
 			);
 			path = rpgGame;
 			sourceTree = "<group>";
@@ -259,8 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C10E9641C694C9200C837D0 /* Monster.swift in Sources */,
 				8C10E9341C5D78A900C837D0 /* ViewController.swift in Sources */,
+				8C10E9601C69405B00C837D0 /* Player.swift in Sources */,
 				8C10E9321C5D78A900C837D0 /* AppDelegate.swift in Sources */,
+				8C10E9621C6944C200C837D0 /* Hero.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +499,7 @@
 				8C10E9581C5D78A900C837D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8C10E9591C5D78A900C837D0 /* Build configuration list for PBXNativeTarget "rpgGameTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +508,7 @@
 				8C10E95B1C5D78A900C837D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8C10E95C1C5D78A900C837D0 /* Build configuration list for PBXNativeTarget "rpgGameUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +517,7 @@
 				8C10E95E1C5D78A900C837D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
